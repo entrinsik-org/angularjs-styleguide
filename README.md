@@ -168,7 +168,6 @@ strongly based on, with slight modification to the
   ```javascript
   /* avoid */
   // logger.js
-  // logger.js
   (function() {
       'use strict';
       
@@ -179,10 +178,10 @@ strongly based on, with slight modification to the
       // logger function is defined after being referenced above
       function logger() { }
 
-})();
-
+  })();
+  ```
   ```javascript
-/* recommended */
+  /* recommended */
   // logger.js
   (function() {
       'use strict';
@@ -194,6 +193,7 @@ strongly based on, with slight modification to the
           .factory('logger', logger);
 
   })();
+```
 
 **[Back to top](#table-of-contents)**
 
